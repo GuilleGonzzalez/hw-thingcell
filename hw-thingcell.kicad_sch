@@ -3536,7 +3536,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid adbbc5b1-c56d-4c2c-a682-14134a9093e3)
   )
-  (text "TODO\nReview ESP GPIOS\nReview testpoints\nAdd LEDs\n" (at 228.6 144.78 0)
+  (text "TODO\nReview ESP GPIOS\nReview testpoints\nAdd LEDs\nAdd button?"
+    (at 228.6 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b3680e29-c283-4796-ab4b-be1102fae2dc)
   )
