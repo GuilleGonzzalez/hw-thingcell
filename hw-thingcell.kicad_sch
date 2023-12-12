@@ -3094,6 +3094,10 @@
     (stroke (width 0) (type default))
     (uuid 8984688a-9c81-4e75-95ab-0e21e0f765f1)
   )
+  (wire (pts (xy 44.45 184.15) (xy 40.64 184.15))
+    (stroke (width 0) (type default))
+    (uuid 89a2480e-af8f-4fb6-924d-0bf69d0fa130)
+  )
   (wire (pts (xy 229.87 71.12) (xy 251.46 71.12))
     (stroke (width 0) (type default))
     (uuid 8a1105ef-db6a-4d70-bc80-b60860e61028)
@@ -3614,6 +3618,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2f608c6a-d7b5-4f74-ae0a-023d76d2ff55)
   )
+  (label "VIN" (at 44.45 184.15 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 32af137f-2c9d-4055-a836-940cf41fc6d4)
+  )
   (label "GSM_RXD" (at 229.87 60.96 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 33abfe95-6bd3-45a5-8248-cefabd1a32ff)
@@ -3910,7 +3918,7 @@
   (symbol (lib_id "power:GND") (at 227.33 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 032c0058-7102-4ae4-841b-5179c8fab1d9)
-    (property "Reference" "#PWR056" (at 227.33 120.65 0)
+    (property "Reference" "#PWR058" (at 227.33 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 115.57 0)
@@ -3926,7 +3934,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -4053,7 +4061,7 @@
   (symbol (lib_id "power:+3V3") (at 153.67 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c782a7b-b9bf-400e-be3a-e06ef789cff5)
-    (property "Reference" "#PWR040" (at 153.67 180.34 0)
+    (property "Reference" "#PWR042" (at 153.67 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 152.4 172.72 0)
@@ -4069,7 +4077,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -4314,7 +4322,7 @@
   (symbol (lib_id "power:GND") (at 179.07 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17b1f0f4-879b-4596-b634-4ede2cd5c18e)
-    (property "Reference" "#PWR049" (at 179.07 166.37 0)
+    (property "Reference" "#PWR051" (at 179.07 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 182.88 162.56 0)
@@ -4330,7 +4338,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -4365,7 +4373,7 @@
   (symbol (lib_id "power:GND") (at 73.66 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 18e96997-c01a-4977-bcb1-551a0fcbe2d6)
-    (property "Reference" "#PWR018" (at 73.66 120.65 0)
+    (property "Reference" "#PWR021" (at 73.66 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 115.57 0)
@@ -4381,7 +4389,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4441,7 +4449,7 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 189.23 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e5a918d-1263-4871-a92d-f96eec51d309)
-    (property "Reference" "J5" (at 191.77 71.12 0)
+    (property "Reference" "J6" (at 191.77 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GSM_ANT" (at 191.77 73.66 0)
@@ -4461,7 +4469,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J5") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -4470,7 +4478,7 @@
   (symbol (lib_id "power:+4V") (at 90.17 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e81610a-bb84-4fb5-83cf-bf1bf517737e)
-    (property "Reference" "#PWR022" (at 90.17 143.51 0)
+    (property "Reference" "#PWR024" (at 90.17 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 90.17 135.89 0)
@@ -4486,7 +4494,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -4495,7 +4503,7 @@
   (symbol (lib_id "power:GND") (at 144.78 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ec7ce8d-779d-4e37-83f4-17696b9ddc3e)
-    (property "Reference" "#PWR038" (at 144.78 195.58 0)
+    (property "Reference" "#PWR040" (at 144.78 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 193.04 0)
@@ -4511,7 +4519,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -4576,7 +4584,7 @@
   (symbol (lib_id "power:+3V3") (at 73.66 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2133d2e9-c705-49a3-be61-3ecd6e557eb7)
-    (property "Reference" "#PWR017" (at 73.66 26.67 0)
+    (property "Reference" "#PWR020" (at 73.66 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 73.66 17.78 0)
@@ -4592,7 +4600,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -4627,7 +4635,7 @@
   (symbol (lib_id "power:GND") (at 229.87 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29c3c126-a2cc-4bec-989e-dba92866deec)
-    (property "Reference" "#PWR057" (at 229.87 53.34 0)
+    (property "Reference" "#PWR059" (at 229.87 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 233.68 49.53 0)
@@ -4643,7 +4651,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -4728,7 +4736,7 @@
   (symbol (lib_id "power:GND") (at 246.38 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b6ff84e-f694-4aef-b74b-21c37038abb4)
-    (property "Reference" "#PWR059" (at 246.38 53.34 0)
+    (property "Reference" "#PWR061" (at 246.38 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 250.19 49.53 0)
@@ -4744,7 +4752,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -4834,7 +4842,7 @@
   (symbol (lib_id "power:GND") (at 104.14 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 32fe1bc3-34ec-45b6-91e7-ffb07726a33d)
-    (property "Reference" "#PWR026" (at 104.14 195.58 0)
+    (property "Reference" "#PWR028" (at 104.14 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 193.04 0)
@@ -4850,7 +4858,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -4885,7 +4893,7 @@
   (symbol (lib_id "power:+3V3") (at 139.7 189.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 337060b4-640a-4535-943a-d795aa725001)
-    (property "Reference" "#PWR036" (at 139.7 185.42 0)
+    (property "Reference" "#PWR038" (at 139.7 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 139.7 193.04 0)
@@ -4901,7 +4909,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -4910,7 +4918,7 @@
   (symbol (lib_id "power:GND") (at 72.39 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33efeed0-dae0-49fb-8fd3-fa24b86cba93)
-    (property "Reference" "#PWR016" (at 72.39 189.23 0)
+    (property "Reference" "#PWR019" (at 72.39 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 72.39 186.69 0)
@@ -4926,7 +4934,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4987,7 +4995,7 @@
   (symbol (lib_id "power:GND") (at 201.93 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3affc357-1dd5-4866-b106-1865b9bf4a9b)
-    (property "Reference" "#PWR053" (at 201.93 62.23 0)
+    (property "Reference" "#PWR055" (at 201.93 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 59.69 0)
@@ -5003,7 +5011,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -5195,7 +5203,7 @@
   (symbol (lib_id "power:VBUS") (at 130.81 132.08 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3fa974ee-e933-459b-a893-59e68a73941a)
-    (property "Reference" "#PWR035" (at 134.62 132.08 0)
+    (property "Reference" "#PWR037" (at 134.62 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 127 132.08 90)
@@ -5211,7 +5219,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -5220,7 +5228,7 @@
   (symbol (lib_id "power:GND") (at 152.4 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42033670-b617-4a79-9fc3-b5f99a778e67)
-    (property "Reference" "#PWR039" (at 152.4 165.1 0)
+    (property "Reference" "#PWR041" (at 152.4 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.21 161.29 0)
@@ -5236,7 +5244,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -5296,7 +5304,7 @@
   (symbol (lib_id "power:GND") (at 114.3 158.75 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 443e2b38-b6d2-47f5-b560-5e1f7261e4b2)
-    (property "Reference" "#PWR031" (at 107.95 158.75 0)
+    (property "Reference" "#PWR033" (at 107.95 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 113.03 161.29 90)
@@ -5312,7 +5320,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -5321,7 +5329,7 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 209.55 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44ab49aa-0ae7-47df-bc77-a8561e493499)
-    (property "Reference" "J6" (at 212.09 66.04 0)
+    (property "Reference" "J7" (at 212.09 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GNSS_ANT" (at 212.09 68.58 0)
@@ -5341,7 +5349,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J6") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -5376,7 +5384,7 @@
   (symbol (lib_id "power:GND") (at 81.28 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a0fbf0d-974f-4a0a-990f-2ac1f78c828e)
-    (property "Reference" "#PWR020" (at 81.28 181.61 0)
+    (property "Reference" "#PWR023" (at 81.28 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.28 179.07 0)
@@ -5392,7 +5400,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -5504,7 +5512,7 @@
   (symbol (lib_id "power:VBUS") (at 36.83 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 54c3d5f3-8317-4745-b919-68b890c9df67)
-    (property "Reference" "#PWR062" (at 36.83 114.3 0)
+    (property "Reference" "#PWR015" (at 36.83 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 38.1 106.68 0)
@@ -5520,7 +5528,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -5555,7 +5563,7 @@
   (symbol (lib_id "power:GND") (at 158.75 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55d6d4c4-5caa-4fe6-a6d8-efdf89370caa)
-    (property "Reference" "#PWR041" (at 158.75 154.94 0)
+    (property "Reference" "#PWR043" (at 158.75 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 162.56 151.13 0)
@@ -5571,7 +5579,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -5684,7 +5692,7 @@
   (symbol (lib_id "power:+3V3") (at 90.17 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5b3e85f3-6d4b-402c-bb6f-968492706dad)
-    (property "Reference" "#PWR024" (at 90.17 171.45 0)
+    (property "Reference" "#PWR026" (at 90.17 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 90.17 162.56 0)
@@ -5700,7 +5708,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -5735,7 +5743,7 @@
   (symbol (lib_id "power:+3V3") (at 176.53 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e2d0cc8-ae1b-4a5c-bd0f-3cefdbac3383)
-    (property "Reference" "#PWR048" (at 176.53 133.35 0)
+    (property "Reference" "#PWR050" (at 176.53 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 180.34 127 0)
@@ -5751,7 +5759,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -5812,7 +5820,7 @@
   (symbol (lib_id "power:GND") (at 168.91 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 687b82ec-40c4-4093-8b7b-cd8e46c87660)
-    (property "Reference" "#PWR046" (at 168.91 119.38 0)
+    (property "Reference" "#PWR048" (at 168.91 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 115.57 0)
@@ -5828,7 +5836,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -5837,7 +5845,7 @@
   (symbol (lib_id "power:+3V3") (at 123.19 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d8a9c36-6686-4f9d-82dc-b4c518b49ce6)
-    (property "Reference" "#PWR033" (at 119.38 88.9 0)
+    (property "Reference" "#PWR035" (at 119.38 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 127 88.9 90)
@@ -5853,7 +5861,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -6055,7 +6063,7 @@
   (symbol (lib_id "power:GND") (at 269.24 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 78c50acd-acd0-414a-96b3-e63a5a7edcb1)
-    (property "Reference" "#PWR061" (at 269.24 46.99 0)
+    (property "Reference" "#PWR063" (at 269.24 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 273.05 43.18 0)
@@ -6071,7 +6079,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -6150,7 +6158,7 @@
   (symbol (lib_id "power:GND") (at 90.17 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 816c46b4-5306-4849-b6d0-5825cd7dca45)
-    (property "Reference" "#PWR023" (at 90.17 153.67 0)
+    (property "Reference" "#PWR025" (at 90.17 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 151.13 0)
@@ -6166,7 +6174,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -6293,7 +6301,7 @@
   (symbol (lib_id "power:GND") (at 168.91 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8948e052-707d-4b57-a1bd-12bb80f25ed3)
-    (property "Reference" "#PWR044" (at 168.91 99.06 0)
+    (property "Reference" "#PWR046" (at 168.91 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 168.91 97.79 0)
@@ -6309,7 +6317,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -6395,7 +6403,7 @@
   (symbol (lib_id "power:GND") (at 127 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ca37191-053a-448c-b44d-e7927f51b218)
-    (property "Reference" "#PWR034" (at 127 195.58 0)
+    (property "Reference" "#PWR036" (at 127 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 193.04 0)
@@ -6411,7 +6419,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -6578,7 +6586,7 @@
   (symbol (lib_id "Connector:Conn_01x08_Pin") (at 137.16 173.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9754b717-82b8-46b9-83a0-719b24a3bd65)
-    (property "Reference" "J4" (at 144.78 172.72 90)
+    (property "Reference" "J5" (at 144.78 172.72 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x08_Pin" (at 133.35 172.72 90)
@@ -6601,7 +6609,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J4") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -6676,7 +6684,7 @@
   (symbol (lib_id "power:GND") (at 245.11 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9b2dbc8a-7804-4a61-9564-c5eded89a149)
-    (property "Reference" "#PWR058" (at 245.11 104.14 0)
+    (property "Reference" "#PWR060" (at 245.11 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 100.33 0)
@@ -6692,7 +6700,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -6794,7 +6802,7 @@
   (symbol (lib_id "power:GND") (at 40.64 193.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a035f630-ee99-4005-a8db-4f6c2a136d48)
-    (property "Reference" "#PWR021" (at 46.99 193.04 0)
+    (property "Reference" "#PWR017" (at 46.99 193.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 193.04 90)
@@ -6810,7 +6818,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -6819,7 +6827,7 @@
   (symbol (lib_id "power:GND") (at 195.58 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0960db2-c14a-436b-b3b0-887c391d45e8)
-    (property "Reference" "#PWR051" (at 195.58 62.23 0)
+    (property "Reference" "#PWR053" (at 195.58 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 198.12 59.69 0)
@@ -6835,7 +6843,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -6870,7 +6878,7 @@
   (symbol (lib_id "power:GND") (at 72.39 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3e59bf2-1572-412b-993c-e4dc393deb30)
-    (property "Reference" "#PWR015" (at 72.39 161.29 0)
+    (property "Reference" "#PWR018" (at 72.39 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 72.39 158.75 0)
@@ -6886,7 +6894,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -6991,7 +6999,7 @@
   (symbol (lib_id "guille-lib:SIM8060-6-0-14-00-A") (at 271.78 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0141364-ccb2-4f7a-83e7-32f9a1d09c57)
-    (property "Reference" "J7" (at 270.51 16.51 0)
+    (property "Reference" "J8" (at 270.51 16.51 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (property "Value" "SIM8060-6-0-14-00-A" (at 256.54 19.05 0)
@@ -7037,7 +7045,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J7") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -7046,7 +7054,7 @@
   (symbol (lib_id "power:GND") (at 90.17 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0fc2bb5-9518-43d8-8137-d81a0aa2f094)
-    (property "Reference" "#PWR025" (at 90.17 181.61 0)
+    (property "Reference" "#PWR027" (at 90.17 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 179.07 0)
@@ -7062,7 +7070,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -7198,7 +7206,7 @@
   (symbol (lib_id "power:GND") (at 209.55 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b67ed74f-fd13-4847-a8f6-e87e64aafcb5)
-    (property "Reference" "#PWR054" (at 209.55 78.74 0)
+    (property "Reference" "#PWR056" (at 209.55 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 209.55 77.47 0)
@@ -7214,7 +7222,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -7223,7 +7231,7 @@
   (symbol (lib_id "power:+4V") (at 170.18 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b722e83e-634b-47f1-a655-cde06f8f14c6)
-    (property "Reference" "#PWR047" (at 170.18 25.4 0)
+    (property "Reference" "#PWR049" (at 170.18 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 170.18 17.78 0)
@@ -7239,7 +7247,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -7248,7 +7256,7 @@
   (symbol (lib_id "power:GND") (at 219.71 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b72552e9-3d8a-4b20-afbd-8033421d39c5)
-    (property "Reference" "#PWR055" (at 219.71 53.34 0)
+    (property "Reference" "#PWR057" (at 219.71 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 49.53 0)
@@ -7264,7 +7272,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -7299,7 +7307,7 @@
   (symbol (lib_id "power:VBUS") (at 114.3 143.51 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb2d187b-9f50-4bed-bdb1-87f9e3dc962f)
-    (property "Reference" "#PWR029" (at 118.11 143.51 0)
+    (property "Reference" "#PWR031" (at 118.11 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 110.49 143.51 90)
@@ -7315,7 +7323,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -7400,7 +7408,7 @@
   (symbol (lib_id "power:+4V") (at 200.66 82.55 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be60ea73-a441-431b-bea2-dfce0ceea8a6)
-    (property "Reference" "#PWR052" (at 200.66 78.74 0)
+    (property "Reference" "#PWR054" (at 200.66 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 200.66 86.36 0)
@@ -7416,7 +7424,32 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR054") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 40.64 186.69 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bf69f993-7447-481a-98e5-a0fb4a55f5d1)
+    (property "Reference" "#PWR016" (at 46.99 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 44.45 186.69 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 40.64 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 40.64 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a09cf411-549a-4120-8a4d-8f3c4c12c6a8))
+    (instances
+      (project "hw-thingcell"
+        (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -7425,13 +7458,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 35.56 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c28e15ad-b6f4-406e-adf6-63beb9c83712)
-    (property "Reference" "J1" (at 26.67 189.23 0)
+    (property "Reference" "J2" (at 26.67 189.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 26.67 191.77 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 35.56 190.5 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" (at 35.56 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 35.56 190.5 0)
@@ -7442,7 +7475,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J1") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -7529,7 +7562,7 @@
   (symbol (lib_id "power:GND") (at 189.23 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca0ab69f-b8e4-4811-af54-7799997bf0a9)
-    (property "Reference" "#PWR050" (at 189.23 83.82 0)
+    (property "Reference" "#PWR052" (at 189.23 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 189.23 82.55 0)
@@ -7545,7 +7578,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -7554,7 +7587,7 @@
   (symbol (lib_id "power:+3V3") (at 165.1 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc6279bf-563a-44e7-9239-7649d4d64099)
-    (property "Reference" "#PWR043" (at 165.1 25.4 0)
+    (property "Reference" "#PWR045" (at 165.1 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 165.1 17.78 0)
@@ -7570,7 +7603,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -7758,7 +7791,7 @@
   (symbol (lib_id "guille-lib:USB4510-03-1-A") (at 133.35 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d4b4e26e-55fe-4c7b-ad26-db2c8d6637e1)
-    (property "Reference" "J3" (at 120.65 138.43 0)
+    (property "Reference" "J4" (at 120.65 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB4510-03-1-A" (at 138.43 138.43 0)
@@ -7804,7 +7837,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J3") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -7813,7 +7846,7 @@
   (symbol (lib_id "Connector:Conn_01x08_Pin") (at 114.3 173.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d55e805b-8e1a-4cf2-92ba-075c56849722)
-    (property "Reference" "J2" (at 121.92 172.72 90)
+    (property "Reference" "J3" (at 121.92 172.72 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x08_Pin" (at 110.49 172.72 90)
@@ -7836,7 +7869,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -7922,7 +7955,7 @@
   (symbol (lib_id "power:VBUS") (at 142.24 189.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de37fc54-663c-4260-9d21-15f7f62e7e85)
-    (property "Reference" "#PWR037" (at 142.24 185.42 0)
+    (property "Reference" "#PWR039" (at 142.24 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 142.24 193.04 0)
@@ -7938,7 +7971,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -7947,7 +7980,7 @@
   (symbol (lib_id "power:+4V") (at 168.91 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df09c351-c145-4e98-a8ea-3f65681ff65d)
-    (property "Reference" "#PWR045" (at 168.91 109.22 0)
+    (property "Reference" "#PWR047" (at 168.91 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 167.64 101.6 0)
@@ -7963,7 +7996,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -7997,7 +8030,7 @@
   (symbol (lib_id "power:+5V") (at 114.3 156.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df91bb90-ad44-40e6-b8e6-c807ad96e473)
-    (property "Reference" "#PWR030" (at 118.11 156.21 0)
+    (property "Reference" "#PWR032" (at 118.11 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 111.76 156.21 90)
@@ -8013,7 +8046,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -8095,10 +8128,36 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x02_Pin") (at 35.56 184.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e72340da-67ef-4372-a0ba-30366188176a)
+    (property "Reference" "J1" (at 26.67 182.88 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x02_Pin" (at 26.67 185.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" (at 35.56 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 35.56 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 160a84ce-e307-44fc-9405-aabf4e68abbb))
+    (pin "2" (uuid 6ffe949c-0ef9-4295-9ce8-a8854f644fdb))
+    (instances
+      (project "hw-thingcell"
+        (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
+          (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 114.3 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e7b390bd-6b9f-426a-95ef-1e186c09036a)
-    (property "Reference" "#PWR028" (at 107.95 140.97 0)
+    (property "Reference" "#PWR030" (at 107.95 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 113.03 138.43 90)
@@ -8114,7 +8173,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -8123,7 +8182,7 @@
   (symbol (lib_id "power:GND") (at 81.28 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e808821c-c2c8-4889-8707-d489c9900309)
-    (property "Reference" "#PWR019" (at 81.28 153.67 0)
+    (property "Reference" "#PWR022" (at 81.28 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.28 151.13 0)
@@ -8139,7 +8198,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -8250,7 +8309,7 @@
   (symbol (lib_id "power:GND") (at 259.08 30.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec5cec08-d8a3-463b-9f71-294e8cd62a38)
-    (property "Reference" "#PWR060" (at 252.73 30.48 0)
+    (property "Reference" "#PWR062" (at 252.73 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 257.81 33.02 90)
@@ -8266,7 +8325,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -8422,7 +8481,7 @@
   (symbol (lib_id "power:GND") (at 121.92 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4bbbd21-fd23-47af-87ea-1eb1412ea162)
-    (property "Reference" "#PWR032" (at 121.92 195.58 0)
+    (property "Reference" "#PWR034" (at 121.92 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 193.04 0)
@@ -8438,7 +8497,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -8523,7 +8582,7 @@
   (symbol (lib_id "power:+3V3") (at 160.02 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd138a84-eb49-47cc-902f-58b15b87b1ea)
-    (property "Reference" "#PWR042" (at 160.02 180.34 0)
+    (property "Reference" "#PWR044" (at 160.02 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 158.75 172.72 0)
@@ -8539,7 +8598,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -8548,7 +8607,7 @@
   (symbol (lib_id "power:GND") (at 106.68 153.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd40416c-6a3f-483f-832f-48fe56e8ba8d)
-    (property "Reference" "#PWR027" (at 106.68 160.02 0)
+    (property "Reference" "#PWR029" (at 106.68 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 156.21 0)
@@ -8564,7 +8623,7 @@
     (instances
       (project "hw-thingcell"
         (path "/b864757b-52bc-4794-ab53-eb54b6429a77"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
